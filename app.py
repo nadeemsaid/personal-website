@@ -110,7 +110,7 @@ with st.container():
     with text_column:
         st.subheader("Lakes Environmental Software")
         st.write(
-            "About Lakes -- coming soon! :grin:"
+            "About Lakes -- coming soon!! :grin:"
         )
 
 with st.container():
