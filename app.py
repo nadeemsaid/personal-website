@@ -32,10 +32,10 @@ def local_css(filename):
 local_css("style/style.css")
 
 lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_rnfwc4vj.json")
-img_me = Image.open("images/thumbnail_image.png")
-img_airboss = Image.open("images/airboss.png")
-img_seh = Image.open("images/seh.png")
-img_lakes = Image.open("images/lakes.png")
+img_me = Image.open("assets/thumbnail_image.png")
+img_airboss = Image.open("assets/airboss.png")
+img_seh = Image.open("assets/seh.png")
+img_lakes = Image.open("assets/lakes.png")
 
 ##########################################################################################
 with st.container():
@@ -170,12 +170,12 @@ with st.container():
 
 with st.container():
 
-    with open("me.pdf", "rb") as pdf_file:
+    with open("assets/me.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
     st.download_button(label="Download Nadeem's Resume",
                        data=PDFbyte,
-                       file_name="test.pdf",
+                       file_name="nadeem_resume.pdf",
                        mime='application/octet-stream')
 
 with st.container():
