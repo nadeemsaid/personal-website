@@ -13,18 +13,6 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-# def crop_to_circle(im):
-#     bigsize = (im.size[0] * 3, im.size[1] * 3)
-#     mask = Image.new('L', bigsize, 0)
-#     ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=255)
-#     mask = mask.resize(im.size, Image.ANTIALIAS)
-#     mask = ImageChops.darker(mask, im.split()[-1])
-#     im.putalpha(mask)
-#
-# im = Image.open("images/thumbnail_image.png").convert('RGBA')
-# crop_to_circle(im)
-# im.save('images/thumbnail_image.png')
-
 def local_css(filename):
     with open(filename) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -36,6 +24,14 @@ img_me = Image.open("assets/thumbnail_image.png")
 img_airboss = Image.open("assets/airboss.png")
 img_seh = Image.open("assets/seh.png")
 img_lakes = Image.open("assets/lakes.png")
+img_coaster = Image.open("assets/coaster.png")
+img_minesweeper = Image.open("assets/minesweeper.png")
+img_mystore = Image.open("assets/mystore.png")
+img_turtle = Image.open("assets/turtle.png")
+img_website = Image.open("assets/website.png")
+img_wine = Image.open("assets/wine.png")
+img_hussein = Image.open("assets/hussein.png")
+img_fhh = Image.open("assets/fhh.png")
 
 ##########################################################################################
 with st.container():
@@ -61,43 +57,98 @@ with st.container():
             "study and work terms every 4 months. That being said, I’m actively looking for new opportunities that the future might hold.")
         st.write("[My Youtube Channel > ](https://www.youtube.com/channel/UC45GdVJRuV0fd4h-ymLLpNA)")
 
-
-# with st.container():
-#     st.write("---")
-#     left_column, right_column = st.columns(2)
-#     with left_column:
-#         st.header("What I do")
-#         st.write("**summary of what I do**")
-#         st.write("[My Youtube Channel >](https://www.youtube.com)")
-#     with right_column:
-#         st_lottie(lottie_coding, height=400, key="coding")
-
 ##########################################################################################
 with st.container():
     st.write("---")
     st.header("Projects")
-    st.write("Projects coming soon! :grin:")
+    #st.write("Projects coming soon! :grin:")
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.empty()
+        st.image(img_minesweeper)
     with text_column:
-        st.subheader("Project name")
+        st.subheader("Waterloo Minesweeper Game")
         st.write(
-            "About project"
+            "-> Programmed using C++, a unique version of Minesweeper, adapted to specifically fit the campus environment of the University of Waterloo"
         )
-        st.markdown("[Watch Video...](https://www.youtube.com)")
+        st.write(
+            "-> Implemented search algorithms to check and update game status"
+        )
+        st.write(
+            "-> Generated and managed a board using the array data structure with bit‑shifting and masking"
+        )
+
+        st.markdown("[Github Link](https://github.com/nadeemsaid/Waterloo-Minesweeper-Game)")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.empty()
-        #st.image(img_contact_form)
+        st.image(img_mystore)
     with text_column:
-        st.subheader("Project name")
+        st.subheader("My Store")
         st.write(
-            "About project"
+            "-> A simple Web Application developed with C#, SQL Server Database and HTML. Allows users to enter people into the DB with personalized information"
         )
-        st.markdown("[Watch Video...](https://www.youtube.com)")
+        st.write(
+            "-> The app allows simple CRUD operations on entries"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/my-store)")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_turtle)
+    with text_column:
+        st.subheader("Water NinjaTurtle")
+        st.write(
+            "-> Utilized autoCAD to design and 3D‑print a turtle that rests over a fish aquarium"
+        )
+        st.write(
+            "-> Assembled a circuit‑board consisting of LED lights, sensors, batteries, resistors that lights up the LED light whenever the fish‑tank needs more water"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/Water-NinjaTurtle)")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_website)
+    with text_column:
+        st.subheader("Personal Website")
+        st.write(
+            "-> Utilized autoCAD to design and 3D‑print a turtle that rests over a fish aquarium"
+        )
+        st.write(
+            "-> A personal website developed with Python (Streamlit, Pillow) to promote myself and connect with people"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/personal-website)")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_coaster)
+    with text_column:
+        st.subheader("The Need for Speed")
+        st.write(
+            "-> Researched the question of: How does the approach velocity affect the energy dissipation within a circular roller coaster loop?"
+        )
+        st.write(
+            "-> Wrote a step-wise iteration theory before designing and building a real modeled roller coaster to test the theory practically"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/The-Need-for-Speed)")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_wine)
+    with text_column:
+        st.subheader("The Sound of Wine")
+        st.write(
+            "-> Research Question: How does the resonant frequency when a wine glass rim is excited depend on the volume of wine in the glass?"
+        )
+        st.write(
+            "-> Modeled the data as a graph and used regression to determine a relationship equation"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/The-Sound-of-Wine)")
+
 
 ##########################################################################################
 with st.container():
@@ -109,6 +160,7 @@ with st.container():
         st.image(img_lakes)
     with text_column:
         st.subheader("Lakes Environmental Software")
+        st.write("-> Software Developer (Sept-Dec 2022)")
         st.write(
             "About Lakes -- coming soon!! :grin:"
         )
@@ -119,11 +171,11 @@ with st.container():
         st.image(img_seh)
     with text_column:
         st.subheader("SEH Computer Systems")
-        st.write("Full Stack Developer (Jan-Apr 2022)")
-        st.write("Participated in multiple agile‑supported sprint ceremonies such as review, retro, refinement, planning to meet user centric needs")
-        st.write("Worked with Microsoft Stack (ASP.NET, EF Core, C#) from the SQL DB to the UI end, gaining experience in API, UI, "
+        st.write("-> Full Stack Developer (Jan-Apr 2022)")
+        st.write("-> Participated in multiple agile‑supported sprint ceremonies such as review, retro, refinement, planning to meet user centric needs")
+        st.write("-> Worked with Microsoft Stack (ASP.NET, EF Core, C#) from the SQL DB to the UI end, gaining experience in API, UI, "
                  "and testing on both ends to develop a Vehicle Insurance Web App")
-        st.write("Participated in discussions with the UI/UX Team and redesigned UI pages to service a better user experience")
+        st.write("-> Participated in discussions with the UI/UX Team and redesigned UI pages to service a better user experience")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -131,12 +183,33 @@ with st.container():
         st.image(img_airboss)
     with text_column:
         st.subheader("Airboss Rubber Solutions")
-        st.write("Production Employee (May-Aug 2021)")
-        st.write("Operated Allen Bradley control systems to run a mill, making different types of rubber sheets while "
+        st.write("-> Production Employee (May-Aug 2021)")
+        st.write("-> Operated Allen Bradley control systems to run a mill, making different types of rubber sheets while "
                  "taking measures to increase production efficiency")
-        st.write("Mitigated risks on the production line using communication and multi‑generational teamwork, "
+        st.write("-> Mitigated risks on the production line using communication and multi‑generational teamwork, "
                  "and worked under Lean Six Sigma safety standards")
-        st.write("Familiarized with control panel circuitry and TCU circuitry")
+        st.write("-> Familiarized with control panel circuitry and TCU circuitry")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_fhh)
+    with text_column:
+        st.subheader("Fine Hygienic Holding (FHH)")
+        st.write("-> Intern (May-Aug 2018)")
+        st.write("-> Shadowed an Enterprise Operations Manager and developed strategies to optimize production lines through analyzing production data")
+        st.write("-> Enhanced skills in efficient planning, budgeting, work ethics and time management")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_hussein)
+    with text_column:
+        st.subheader("Al Hussein Society")
+        st.write("-> Swimming Instructor (Mar-Apr 2018)")
+        st.write("-> Taught a child diagnosed with spastic diplegic cerebral palsy how to swim using different training methods")
+        st.write("-> Developed an individualized curriculum focusing on strengthening various muscle groups")
+        st.markdown("[Created a YouTube Video to summarize this volunteering experience](https://youtu.be/gN3S_3T5kZI)")
 
 ##########################################################################################
 with st.container():
