@@ -161,9 +161,10 @@ with st.container():
     with text_column:
         st.subheader("Lakes Environmental Software")
         st.write("-> Software Developer (Sept-Dec 2022)")
-        st.write(
-            "About Lakes -- coming soon!! :grin:"
-        )
+        st.write("-> Optimized internal web application tools by 200% using C# to read over a year worth of weather data taken at every hour of every day")
+        st.write("-> Built a CLI tool that runs a section of the application when requested, to optimize all company application performances at deployment")
+        st.write("-> Improved application security by preventing potential open redirect vulnerabilities and CSRF attacks")
+        st.write("-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -218,7 +219,7 @@ with st.container():
     st.write("Easy way to send me an email below :wink:")
     st.write("##")
 
-    contact_form = """
+    contact_form = """ 
     <form action = "https://formsubmit.co/1aacf84584ca2f3f2cb17bfd075d3bc6" method = "POST">
     <input type="hidden" name="_captcha" value="false">
     <input type="text" name="name" placeholder="Your name" required>
