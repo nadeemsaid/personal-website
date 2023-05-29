@@ -32,6 +32,7 @@ img_website = Image.open("assets/website.png")
 img_wine = Image.open("assets/wine.png")
 img_hussein = Image.open("assets/hussein.png")
 img_fhh = Image.open("assets/fhh.png")
+img_DCHRS = Image.open("assets/dchrs.png")
 
 ##########################################################################################
 with st.container():
@@ -62,6 +63,20 @@ with st.container():
     st.write("---")
     st.header("Projects")
     #st.write("Projects coming soon! :grin:")
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_DCHRS)
+    with text_column:
+        st.subheader("Dolphin Chains HR Solutions")
+        st.write(
+            "-> Developed DCHRS, a decentralized HR platform leveraging blockchain for secure and cost‑effective document management, empowering companies"
+        )
+        st.write(
+            "-> Overcame integration challenges, gaining deep blockchain expertise through collaboration with industry leaders, enabling scalable & efficient HR solutions"
+        )
+        st.markdown("[DevPost Link](https://devpost.com/software/dolphin-chains-hr-solutions)")
+
+with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_minesweeper)
@@ -160,11 +175,27 @@ with st.container():
         st.image(img_lakes)
     with text_column:
         st.subheader("Lakes Environmental Software")
+        st.write("-> A.I. and Data Engineer (May-Aug 2023)")
+        st.write("-> Utilized TensorFlow and Keras neural network & deep learning models for land cover change detection with Landsat & Sentinel satellite data")
+        st.write("-> Employed GIS‑powered Python workflows integrating GDAL to download, preprocess, & analyze satellite imagery for environmental monitoring")
+        st.write("-> Conducted research on land cover usage change, deforestation, & climate change using remote sensing & AI techniques")
+        st.write("-> Created reporting mechanisms for timely insights on environmental changes, supporting resource management and ecological monitoring")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_lakes)
+    with text_column:
+        st.subheader("Lakes Environmental Software")
         st.write("-> Software Developer (Sept-Dec 2022)")
-        st.write("-> Optimized internal web application tools by 200% using C# to read over a year worth of weather data taken at every hour of every day")
-        st.write("-> Built a CLI tool that runs a section of the application when requested, to optimize all company application performances at deployment")
-        st.write("-> Improved application security by preventing potential open redirect vulnerabilities and CSRF attacks")
-        st.write("-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
+        st.write(
+            "-> Optimized internal web application tools by 200% using C# to read over a year worth of weather data taken at every hour of every day")
+        st.write(
+            "-> Built a CLI tool that runs a section of the application when requested, to optimize all company application performances at deployment")
+        st.write(
+            "-> Improved application security by preventing potential open redirect vulnerabilities and CSRF attacks")
+        st.write(
+            "-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -253,7 +284,7 @@ with st.container():
                        mime='application/octet-stream')
 
 with st.container():
-    copyright = """<h1 style='text-align: center; color: white;'>Nadeem Said 2022</h1>"""
+    copyright = """<h1 style='text-align: center; color: white;'>Nadeem Said 2023</h1>"""
     st.header("")
     st.header("")
     st.markdown(copyright, unsafe_allow_html=True)
