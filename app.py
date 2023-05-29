@@ -247,26 +247,29 @@ with st.container():
 with st.container():
     st.write("---")
     st.header("Contact Information")
-    st.write("Easy way to send me an email below :wink:")
-    st.write("##")
-
-    contact_form = """ 
-    <form action = "https://formsubmit.co/1aacf84584ca2f3f2cb17bfd075d3bc6" method = "POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="Your message here" required></textarea>
-    <button type="submit">Send</button>
-    </form>
-    """
+    # st.write("Easy way to send me an email below :wink:")
+    # st.write("##")
+    #
+    # contact_form = """
+    # <form action = "https://formsubmit.co/1aacf84584ca2f3f2cb17bfd075d3bc6" method = "POST">
+    # <input type="hidden" name="_captcha" value="false">
+    # <input type="text" name="name" placeholder="Your name" required>
+    # <input type="email" name="email" placeholder="Your email" required>
+    # <textarea name="message" placeholder="Your message here" required></textarea>
+    # <button type="submit">Send</button>
+    # </form>
+    # """
 
     left_column, right_column = st.columns(2)
     with left_column:
-        st.markdown(contact_form, unsafe_allow_html=True)
+        #st.markdown(contact_form, unsafe_allow_html=True)
         st.write("")
         st.write("")
         st.subheader("[Connect with me on LinkedIn! > ](https://www.linkedin.com/in/nadeem-said-517951164)")
         st.subheader("[Take a look at my Github! > ](https://github.com/nadeemsaid)")
+        st.markdown("<h3 style='color: light-purple;'>Do not hesitate to contact me on either:</h3>", unsafe_allow_html=True)
+        st.write("My Email : nsaid@uwaterloo.ca")
+        st.write("My Phone Number : 437-986-7215")
 
 
 
