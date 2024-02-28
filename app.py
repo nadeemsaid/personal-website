@@ -67,6 +67,101 @@ with st.container():
         
 with st.container():
     st.write("---")
+    st.header("Work Experience")
+    st.write("###")
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_tauria)
+    with text_column:
+        st.subheader("Tauria")
+        st.write("-> Machine Learning Engineer (Jan-Apr 2024)")
+        st.write("-> Developed and implemented an AI‑powered chatbot utilizing Python, OpenAI, LLMs, and other models to enhance communication within Tauria’s platform")
+        st.write("-> Designed and deployed a secure web application with user authentication, persistent chat history, and API integration, optimizing for efficiency and scalability")
+        st.write("-> Spearheaded end‑to‑end development of the UI/UX, ensuring seamless user experience and leveraging advanced routing/DNS knowledge for deployment")
+
+st.write("")
+st.write("")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_lakes)
+    with text_column:
+        st.subheader("Lakes Environmental Software")
+        st.write("-> A.I. and Data Engineer (May-Aug 2023)")
+        st.write("-> Engineered a MVP deforestation detection system, employing a PyTorch CNN LSTM AI model, integrated with Flask for user‑intuitive result visualization")
+        st.write("-> Utilized TensorFlow and Keras neural network & deep learning models for land cover change detection with Landsat & Sentinel satellite data")
+        st.write("-> Employed GIS‑powered Python workflows integrating GDAL to download, preprocess, & analyze satellite imagery for environmental monitoring")
+        st.write("-> Conducted research on land cover usage change, deforestation, & climate change using remote sensing & AI techniques")
+        st.write("-> Created reporting mechanisms for timely insights on environmental changes, supporting resource management and ecological monitoring")
+
+st.write("")
+st.write("")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_lakes)
+    with text_column:
+        st.subheader("Lakes Environmental Software")
+        st.write("-> Software Developer (Sept-Dec 2022)")
+        st.write(
+            "-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
+        st.write(
+            "-> Optimized internal web application tools by 200% using C# to read over a year worth of weather data taken at every hour of every day")
+        st.write(
+            "-> Built a CLI tool that runs a section of the application when requested, to optimize all company application performances at deployment")
+        st.write(
+            "-> Improved application security by preventing potential open redirect vulnerabilities and CSRF attacks")
+
+st.write("")
+st.write("")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_seh)
+    with text_column:
+        st.subheader("SEH Computer Systems")
+        st.write("-> Full Stack Developer (Jan-Apr 2022)")
+        st.write("-> Engaged in multiple agile‑supported sprint ceremonies such as review, retro, refinement, planning to meet user centric needs")
+        st.write("-> Worked with Microsoft Stack (ASP.NET, EF Core, C#) from the SQL DB to the UI end, gaining experience in API, UI, "
+                 "and testing on both ends to develop a Vehicle Insurance Web App")
+        st.write("-> Redesigned UI pages to enhance user experience following discussions with the UI/UX Team")
+
+st.write("")
+st.write("")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_airboss)
+    with text_column:
+        st.subheader("Airboss Rubber Solutions")
+        st.write("-> Production Employee (May-Aug 2021)")
+        st.write("-> Operated Allen Bradley control systems to run a mill, making different types of rubber sheets while "
+                 "taking measures to increase production efficiency")
+        st.write("-> Mitigated risks on the production line using communication and multi‑generational teamwork, "
+                 "and worked under Lean Six Sigma safety standards")
+        st.write("-> Familiarized with control panel circuitry and TCU circuitry")
+
+st.write("")
+st.write("")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_fhh)
+    with text_column:
+        st.subheader("Fine Hygienic Holding (FHH)")
+        st.write("-> Intern (May-Aug 2018)")
+        st.write("-> Shadowed an Enterprise Operations Manager and developed strategies to optimize production lines through analyzing production data")
+        st.write("-> Enhanced skills in efficient planning, budgeting, work ethics and time management")
+
+##########################################################################################
+        
+with st.container():
+    st.write("---")
     st.header("Projects")
     image_column, text_column = st.columns((1, 2))
     with image_column:
@@ -201,101 +296,6 @@ with st.container():
             "-> Modeled the data as a graph and used regression to determine a relationship equation"
         )
         st.markdown("[Github Link](https://github.com/nadeemsaid/The-Sound-of-Wine)")
-
-##########################################################################################
-        
-with st.container():
-    st.write("---")
-    st.header("Work Experience")
-    st.write("###")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_tauria)
-    with text_column:
-        st.subheader("Tauria")
-        st.write("-> Machine Learning Engineer (Jan-Apr 2024)")
-        st.write("-> Developed and implemented an AI‑powered chatbot utilizing Python, OpenAI, LLMs, and other models to enhance communication within Tauria’s platform")
-        st.write("-> Designed and deployed a secure web application with user authentication, persistent chat history, and API integration, optimizing for efficiency and scalability")
-        st.write("-> Spearheaded end‑to‑end development of the UI/UX, ensuring seamless user experience and leveraging advanced routing/DNS knowledge for deployment")
-
-st.write("")
-st.write("")
-
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_lakes)
-    with text_column:
-        st.subheader("Lakes Environmental Software")
-        st.write("-> A.I. and Data Engineer (May-Aug 2023)")
-        st.write("-> Engineered a MVP deforestation detection system, employing a PyTorch CNN LSTM AI model, integrated with Flask for user‑intuitive result visualization")
-        st.write("-> Utilized TensorFlow and Keras neural network & deep learning models for land cover change detection with Landsat & Sentinel satellite data")
-        st.write("-> Employed GIS‑powered Python workflows integrating GDAL to download, preprocess, & analyze satellite imagery for environmental monitoring")
-        st.write("-> Conducted research on land cover usage change, deforestation, & climate change using remote sensing & AI techniques")
-        st.write("-> Created reporting mechanisms for timely insights on environmental changes, supporting resource management and ecological monitoring")
-
-st.write("")
-st.write("")
-
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_lakes)
-    with text_column:
-        st.subheader("Lakes Environmental Software")
-        st.write("-> Software Developer (Sept-Dec 2022)")
-        st.write(
-            "-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
-        st.write(
-            "-> Optimized internal web application tools by 200% using C# to read over a year worth of weather data taken at every hour of every day")
-        st.write(
-            "-> Built a CLI tool that runs a section of the application when requested, to optimize all company application performances at deployment")
-        st.write(
-            "-> Improved application security by preventing potential open redirect vulnerabilities and CSRF attacks")
-
-st.write("")
-st.write("")
-
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_seh)
-    with text_column:
-        st.subheader("SEH Computer Systems")
-        st.write("-> Full Stack Developer (Jan-Apr 2022)")
-        st.write("-> Engaged in multiple agile‑supported sprint ceremonies such as review, retro, refinement, planning to meet user centric needs")
-        st.write("-> Worked with Microsoft Stack (ASP.NET, EF Core, C#) from the SQL DB to the UI end, gaining experience in API, UI, "
-                 "and testing on both ends to develop a Vehicle Insurance Web App")
-        st.write("-> Redesigned UI pages to enhance user experience following discussions with the UI/UX Team")
-
-st.write("")
-st.write("")
-
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_airboss)
-    with text_column:
-        st.subheader("Airboss Rubber Solutions")
-        st.write("-> Production Employee (May-Aug 2021)")
-        st.write("-> Operated Allen Bradley control systems to run a mill, making different types of rubber sheets while "
-                 "taking measures to increase production efficiency")
-        st.write("-> Mitigated risks on the production line using communication and multi‑generational teamwork, "
-                 "and worked under Lean Six Sigma safety standards")
-        st.write("-> Familiarized with control panel circuitry and TCU circuitry")
-
-st.write("")
-st.write("")
-
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_fhh)
-    with text_column:
-        st.subheader("Fine Hygienic Holding (FHH)")
-        st.write("-> Intern (May-Aug 2018)")
-        st.write("-> Shadowed an Enterprise Operations Manager and developed strategies to optimize production lines through analyzing production data")
-        st.write("-> Enhanced skills in efficient planning, budgeting, work ethics and time management")
 
 ##########################################################################################
         
