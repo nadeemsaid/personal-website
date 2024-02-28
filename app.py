@@ -23,6 +23,7 @@ lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_rn
 img_me = Image.open("assets/thumbnail_image.png")
 img_airboss = Image.open("assets/airboss.png")
 img_seh = Image.open("assets/seh.png")
+img_tauria = Image.open("assets/tauria.png")
 img_lakes = Image.open("assets/lakes.png")
 img_coaster = Image.open("assets/coaster.png")
 img_minesweeper = Image.open("assets/minesweeper.png")
@@ -33,8 +34,10 @@ img_wine = Image.open("assets/wine.png")
 img_hussein = Image.open("assets/hussein.png")
 img_fhh = Image.open("assets/fhh.png")
 img_DCHRS = Image.open("assets/dchrs.png")
+img_chatriley = Image.open("assets/chatriley.png")
 
 ##########################################################################################
+
 with st.container():
     left_column, right_column = st.columns((1, 2))
     with left_column:
@@ -42,15 +45,17 @@ with st.container():
         im = st.image(img_me)
 
     with right_column:
-        st.title("A third year Computer Engineering student-athlete at the University of Waterloo")
+        st.title("A fourth year B.A.Sc Computer Engineering student-athlete at the University of Waterloo graduating in April 2025")
         st.write("I am a part of the Waterloo Warriors Varsity Swim Team and the Jordanian National Swimming Team. "
-                 "I balance school with over 15 hours of training a week. I’m an aspiring learner who is very passionate about the future. "
+                 "I balance school with over 17 hours of training a week. I’m an aspiring learner who is very passionate about the future. "
                  "I love programming and innovating new things that make life easier. More importantly, I love seeing people use what I develop in their daily lives. "
+                 "I am currently interested in the field of Artifical Intelligence, specifically in Machine Learning and Natural Language Processing and have done \
+                 a few internships in the field. "
                  "I am a very enthusiastic person and I love meeting new people.")
         st.write(
-            "I was born on April 10th, 2002, in Amman, Jordan. I moved to Canada to pursue my undergraduate degree at the University of Waterloo."
+            "I was born on April 10th, 2002, in Amman, Jordan. I moved to Canada to pursue my undergraduate degree at the University of Waterloo. "
             "During my free time, I love playing the drums, going to the gym, and watching movies/TV shows. "
-            "I enjoy cooking and trying new authentic recipes as well.")
+            "I enjoy travelling to new places and cooking/trying new authentic recipes from around the world. ")
         st.write(
             "I developed this website using a couple frameworks in the Python programming language such as Streamlit and Pillow. "
             "I enjoy developing programs in Python, C#, C++ and more! The main reason I developed this website is to build new connections "
@@ -59,10 +64,28 @@ with st.container():
         st.write("[My Youtube Channel > ](https://www.youtube.com/channel/UC45GdVJRuV0fd4h-ymLLpNA)")
 
 ##########################################################################################
+        
 with st.container():
     st.write("---")
     st.header("Projects")
-    #st.write("Projects coming soon! :grin:")
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_chatriley)
+    with text_column:
+        st.subheader("ChatRiley the Recruiter")
+        st.write(
+            "-> Developed and deployed Riley, a resume chatbot powered by LLMs and AI, utilizing vector databases and proximity vectors for professional \
+                and personalized responses to user queries"
+        )
+        st.write(
+            "-> Integrated OpenAI’s GPT‑4 technology, enabling seamless context‑aware question answering, enhancing recruiter interactions with uploaded resumes"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/resume-chatbot-llm)")
+
+st.write("")
+st.write("")
+
+with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_DCHRS)
@@ -75,6 +98,26 @@ with st.container():
             "-> Overcame integration challenges, gaining deep blockchain expertise through collaboration with industry leaders, enabling scalable & efficient HR solutions"
         )
         st.markdown("[DevPost Link](https://devpost.com/software/dolphin-chains-hr-solutions)")
+
+st.write("")
+st.write("")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_mystore)
+    with text_column:
+        st.subheader("My Store")
+        st.write(
+            "-> A Web Application developed with C#, SQL Server Database and HTML. Allows users to enter personalized information into the DB"
+        )
+        st.write(
+            "-> The app allows CRUD operations on entries"
+        )
+        st.markdown("[Github Link](https://github.com/nadeemsaid/my-store)")
+
+st.write("")
+st.write("")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -94,19 +137,22 @@ with st.container():
 
         st.markdown("[Github Link](https://github.com/nadeemsaid/Waterloo-Minesweeper-Game)")
 
+st.write("")
+st.write("")
+
 with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_mystore)
+        st.image(img_website)
     with text_column:
-        st.subheader("My Store")
+        st.subheader("Personal Website")
         st.write(
-            "-> A simple Web Application developed with C#, SQL Server Database and HTML. Allows users to enter people into the DB with personalized information"
+            "-> A personal website developed with Python (Streamlit, Pillow) to promote myself and connect with people"
         )
-        st.write(
-            "-> The app allows simple CRUD operations on entries"
-        )
-        st.markdown("[Github Link](https://github.com/nadeemsaid/my-store)")
+        st.markdown("[Github Link](https://github.com/nadeemsaid/personal-website)")
+
+st.write("")
+st.write("")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -122,19 +168,8 @@ with st.container():
         )
         st.markdown("[Github Link](https://github.com/nadeemsaid/Water-NinjaTurtle)")
 
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_website)
-    with text_column:
-        st.subheader("Personal Website")
-        st.write(
-            "-> Utilized autoCAD to design and 3D‑print a turtle that rests over a fish aquarium"
-        )
-        st.write(
-            "-> A personal website developed with Python (Streamlit, Pillow) to promote myself and connect with people"
-        )
-        st.markdown("[Github Link](https://github.com/nadeemsaid/personal-website)")
+st.write("")
+st.write("")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -150,6 +185,9 @@ with st.container():
         )
         st.markdown("[Github Link](https://github.com/nadeemsaid/The-Need-for-Speed)")
 
+st.write("")
+st.write("")
+
 with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
@@ -164,22 +202,40 @@ with st.container():
         )
         st.markdown("[Github Link](https://github.com/nadeemsaid/The-Sound-of-Wine)")
 
-
 ##########################################################################################
+        
 with st.container():
     st.write("---")
-    st.header("Experience")
+    st.header("Work Experience")
     st.write("###")
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_tauria)
+    with text_column:
+        st.subheader("Tauria")
+        st.write("-> Machine Learning Engineer (Jan-Apr 2024)")
+        st.write("-> Developed and implemented an AI‑powered chatbot utilizing Python, OpenAI, LLMs, and other models to enhance communication within Tauria’s platform")
+        st.write("-> Designed and deployed a secure web application with user authentication, persistent chat history, and API integration, optimizing for efficiency and scalability")
+        st.write("-> Spearheaded end‑to‑end development of the UI/UX, ensuring seamless user experience and leveraging advanced routing/DNS knowledge for deployment")
+
+st.write("")
+st.write("")
+
+with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_lakes)
     with text_column:
         st.subheader("Lakes Environmental Software")
         st.write("-> A.I. and Data Engineer (May-Aug 2023)")
+        st.write("-> Engineered a MVP deforestation detection system, employing a PyTorch CNN LSTM AI model, integrated with Flask for user‑intuitive result visualization")
         st.write("-> Utilized TensorFlow and Keras neural network & deep learning models for land cover change detection with Landsat & Sentinel satellite data")
         st.write("-> Employed GIS‑powered Python workflows integrating GDAL to download, preprocess, & analyze satellite imagery for environmental monitoring")
         st.write("-> Conducted research on land cover usage change, deforestation, & climate change using remote sensing & AI techniques")
         st.write("-> Created reporting mechanisms for timely insights on environmental changes, supporting resource management and ecological monitoring")
+
+st.write("")
+st.write("")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -189,13 +245,16 @@ with st.container():
         st.subheader("Lakes Environmental Software")
         st.write("-> Software Developer (Sept-Dec 2022)")
         st.write(
+            "-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
+        st.write(
             "-> Optimized internal web application tools by 200% using C# to read over a year worth of weather data taken at every hour of every day")
         st.write(
             "-> Built a CLI tool that runs a section of the application when requested, to optimize all company application performances at deployment")
         st.write(
             "-> Improved application security by preventing potential open redirect vulnerabilities and CSRF attacks")
-        st.write(
-            "-> Worked in Python (different libraries) to analyze & present geospatial data. Wrote programs using satellite imagery to help farmers in vegetation planning")
+
+st.write("")
+st.write("")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -204,10 +263,13 @@ with st.container():
     with text_column:
         st.subheader("SEH Computer Systems")
         st.write("-> Full Stack Developer (Jan-Apr 2022)")
-        st.write("-> Participated in multiple agile‑supported sprint ceremonies such as review, retro, refinement, planning to meet user centric needs")
+        st.write("-> Engaged in multiple agile‑supported sprint ceremonies such as review, retro, refinement, planning to meet user centric needs")
         st.write("-> Worked with Microsoft Stack (ASP.NET, EF Core, C#) from the SQL DB to the UI end, gaining experience in API, UI, "
                  "and testing on both ends to develop a Vehicle Insurance Web App")
-        st.write("-> Participated in discussions with the UI/UX Team and redesigned UI pages to service a better user experience")
+        st.write("-> Redesigned UI pages to enhance user experience following discussions with the UI/UX Team")
+
+st.write("")
+st.write("")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))
@@ -222,6 +284,9 @@ with st.container():
                  "and worked under Lean Six Sigma safety standards")
         st.write("-> Familiarized with control panel circuitry and TCU circuitry")
 
+st.write("")
+st.write("")
+
 with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
@@ -232,7 +297,12 @@ with st.container():
         st.write("-> Shadowed an Enterprise Operations Manager and developed strategies to optimize production lines through analyzing production data")
         st.write("-> Enhanced skills in efficient planning, budgeting, work ethics and time management")
 
+##########################################################################################
+        
 with st.container():
+    st.write("---")
+    st.header("Volunteer Work")
+    st.write("###")
     image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_hussein)
@@ -244,6 +314,40 @@ with st.container():
         st.markdown("[Created a YouTube Video to summarize this volunteering experience](https://youtu.be/gN3S_3T5kZI)")
 
 ##########################################################################################
+
+with st.container():
+    st.write("---")
+    st.header("Honours & Awards")
+    st.write("###")
+    for award in [
+        {
+            "title": "4X USPORTS Academic All-Canadian (2024)",
+            "event": "USPORTS Academic Award for top student-athlete academic achievers",
+        },
+        {
+            "title": "Jackal Protocol First Place Award (2023)",
+            "event": "[OlympiHacks (Waterloo Blockchain Olympics) Hackathon](https://olympihacks.devpost.com/?ref_feature=challenge&ref_medium=discover)",
+        },
+        {
+            "title": "Athletic Award (2020)",
+            "event": "[Board of Trustees Award for Distinguished Representation of Jordan](https://youtu.be/EKF7Eydryyg)",
+        },
+        {
+            "title": "Academic Award (2019)",
+            "event": "Awarded by PSUT for being one of the top 100 academic achievers in the Jordan in 2019",
+        },
+        {
+            "title": "Silver & Bronze Medalist (2017)",
+            "event": "200m & 100m backstroke - Stuttgart International Swimming Championships",
+        },
+    ]:
+        st.write(f"**{award['title']}**")
+        st.write(f"- {award['event']}")
+        st.write("")
+        st.write("")
+
+##########################################################################################
+        
 with st.container():
     st.write("---")
     st.header("Contact Information")
@@ -287,7 +391,7 @@ with st.container():
                        mime='application/octet-stream')
 
 with st.container():
-    copyright = """<h1 style='text-align: center; color: white;'>Nadeem Said 2023</h1>"""
+    copyright = """<h1 style='text-align: center; color: white;'>Nadeem Said 2024</h1>"""
     st.header("")
     st.header("")
     st.markdown(copyright, unsafe_allow_html=True)
