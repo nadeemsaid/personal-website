@@ -75,10 +75,10 @@ with st.container():
     with text_column:
         st.subheader("Tauria")
         st.write("-> Machine Learning Engineer (Jan-Apr 2024)")
-        st.write("-> Developed and implemented an AI‑powered chatbot utilizing Python, OpenAI, LLMs, and other models to enhance communication within Tauria’s platform")
-        st.write("-> Designed and deployed a secure web application with user authentication, persistent chat history, and API integration, optimizing for efficiency and scalability")
-        st.write("-> Spearheaded end‑to‑end development of the UI/UX, ensuring seamless user experience and leveraging advanced routing/DNS knowledge for deployment")
-
+        st.write("-> Engineered & launched QUIN, an advanced AI‑driven SaaS chatbot surpassing GPT4 capabilities in emergency response, using Python, OpenAI, & LLMs")
+        st.write("-> Architected a comprehensive Web App for QUIN including a trained DNN, report generation, and database management, featuring robust security measures, including user authentication and encrypted chat histories, along with seamless API integrations to ensure scalability and operational efficiency")
+        st.write("-> Led the complete design and implementation of an intuitive UI/UX, leveraging sophisticated DNS management for effective application deployment")
+        st.write("-> Designed & refined a specialized dataset for the fine‑tuning process of the GPT‑4 model to deliver superior performance tailored to specific business needs")
 st.write("")
 st.write("")
 
@@ -345,6 +345,32 @@ with st.container():
         st.write(f"- {award['event']}")
         st.write("")
         st.write("")
+
+##########################################################################################
+        
+with st.container():
+    st.write("---")
+    st.header("Letters of Recommendation")
+    with st.container():
+        with open("assets/letter1.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+
+    st.subheader("Tauria Letter of Recommendation from Lakes Environmental Software/Tauria CEO Prof. Jesse Van Griensven, Ph.D., P.Eng.")
+    st.download_button(label="Download Tauria Letter of Recommendation",
+                    data=PDFbyte,
+                    file_name="Tauria_Letter_of_Recommendation.pdf",
+                    mime='application/octet-stream')
+    st.write(" ")
+
+    with st.container():
+        with open("assets/letter0.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+    st.subheader("Lakes Environmental Software Letter of Recommendation from Lakes CEO Prof. Jesse Van Griensven, Ph.D., P.Eng.")
+    st.download_button(label="Download Lakes Letter of Recommendation",
+                    data=PDFbyte,
+                    file_name="Lakes_Letter_of_Recommendation.pdf",
+                    mime='application/octet-stream')
+
 
 ##########################################################################################
         
